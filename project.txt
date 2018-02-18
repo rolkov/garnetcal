@@ -27,6 +27,10 @@ Environment Initialization Steps
   CL: virtualenv --python=python3.6 venv
   CL: source venv/bin/activate
   venv CL: pip install django~=2.0.2
+  venv CL: pip install flake8
+  venv CL: pip install flake8-docstrings
+  venv CL: pip install hacking
+  venv CL: pip freeze >> requirements.txt
   CL: git init
   CL: git config --global user.name rolkov
   CL: git config --global user.email rokov+git@gmail.com
@@ -37,7 +41,7 @@ Environment Initialization Steps
     myvenv
     db.sqlite3
     /static
-  Create new repo garnetcal on GitHub and use repo's https clone URL
+  Create empty new repo garnetcal on GitHub and use repo's https clone URL
   CL: git remote add origin https://github.com/rolkov/garnetcal.git
   CL: git push -u origin master
 
